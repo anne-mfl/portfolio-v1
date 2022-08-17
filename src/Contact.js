@@ -12,7 +12,7 @@ function Contact({ lightTheme }) {
 
   return (
     <>
-      <div className='mx-8 md:mx-40 h-screen flex justify-center items-center' id='contact' ref={contactRef}>
+      <div className='mx-8 mt-32 mb-24 md:mt-0 md:mb-0 md:mx-40 md:h-screen flex justify-center items-center' id='contact' ref={contactRef}>
 
         <ScrollAnimation animateIn="fadeInUp">
           <h1 className='font-montserrat text-3xl border-b-2 w-fit pb-2 border-beige mb-10'>Get in touch</h1>

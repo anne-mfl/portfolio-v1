@@ -119,10 +119,10 @@ function Projects() {
   return (
     <div className='mx-6 md:mx-36' id='projects' ref={projectsRef}>
       <ScrollAnimation animateIn="fadeInUp">
-        <h1 className='font-montserrat text-2xl md:text-3xl border-b-2 w-fit pb-2 border-beige mb-8 mt-20 md:mt-0'> Projects</h1>
+        <h1 className='font-montserrat text-2xl md:text-3xl border-b-2 w-fit pb-2 border-beige mb-8 mt-40'> Projects</h1>
       </ScrollAnimation>
 
-      <div className='grid grid-cols-2 md:grid-cols-3'>
+      <div className='grid md:grid-cols-3'>
         {projects.map((project, i) => (
           <ScrollAnimation
             animateIn="fadeInUp"

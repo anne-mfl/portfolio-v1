@@ -13,7 +13,7 @@ function AboutMe({ lightTheme }) {
         <section className='md:basis-5/12'>
 
           <ScrollAnimation animateIn="fadeInUp" >
-            <h1 className='font-montserrat text-2xl border-b-2 w-fit pb-2 border-beige md:hidden'>About me</h1>
+            <h1 className='font-montserrat text-2xl border-b-2 w-fit pb-2 border-beige mt-28 md:hidden'>About me</h1>
           </ScrollAnimation>
 
           <ScrollAnimation animateIn="fadeInUp">
