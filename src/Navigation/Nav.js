@@ -116,8 +116,8 @@ const Nav = ({ lightTheme, setLightTheme }) => {
 
 
 			<div className={`${mobileMenuOpen
-				? `block duration-1000 md:invisible`
-				: 'block duration-1000 -translate-y-full md:invisible'}
+				? `block duration-700 md:invisible`
+				: 'block duration-700 -translate-y-full md:invisible'}
 					`}>
 				<div className={`text-center md:hidden block ${lightTheme ? 'shadow-sm bg-white text-light-black' : 'border-b  bg-slate-800 text-white'}`}>
 
