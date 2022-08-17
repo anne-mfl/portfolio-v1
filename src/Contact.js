@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNav } from './Navigation/useNav'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGitlab, faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
 import ScrollAnimation from 'react-animate-on-scroll';
 
