@@ -1,0 +1,26 @@
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+body ::-webkit-scrollbar-track #scrollbar-dark{
+  background-color:  pink !important;
+}
+
+::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(128, 126, 126); 
+  /* border: 1px solid #F1E4E8; */
+  border-radius: 2px;
+}
+
+:root{
+  /* scrollbar-color: #7D7D7D !important; */
+  scrollbar-width: thin !important;
+}
+

@@ -1,0 +1,224 @@
+.navAnim {
+  animation-name: fadeInDown
+}
+
+.opac {
+  opacity: 1 !important;
+}
+
+.durnone {
+  transition-duration: 0ms !important;
+}
+
+/* ------------------------------------------------ */
+
+nav {
+  z-index: 10;
+  top: 0;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: sticky;
+  transition: transform 150ms ease-in-out;
+}
+
+nav div {
+  display: flex;
+  /* margin-right: 20px; */
+}
+
+nav div p {
+  font-size: 20px;
+  transition-delay: 0.25s;
+  background-color: transparent;
+  /* margin: 0 22px 0 0; */
+}
+
+nav p:hover {
+  cursor: pointer;
+}
+
+nav p.activeClass {
+  font-weight: 500;
+}
+
+.navMenu {
+  margin-right: 4px;
+}
+
+.navMenu p.activeClass:after {
+  content: "";
+  position: absolute;
+  background-color: rgb(240 237 240);
+  height: 3px;
+  width: 100%;
+  transition: 0.3s;
+  bottom: -6px;
+  left: 0;
+}
+
+nav p .MuiSvgIcon-root {
+  font-size: 10px;
+  margin-left: 8px;
+  background-color: transparent;
+}
+
+nav p .MuiSvgIcon-root .activeClass {
+  background-color: white;
+}
+
+
+.nav-bar--hidden {
+  transform: translateY(-100%);
+}
+
+.navMenu p {
+  position: relative;
+  padding: 0 10px;
+}
+
+.navMenu p:after {
+  content: "";
+  position: absolute;
+  background-color: rgb(240 237 240);
+  height: 2px;
+  width: 0%;
+  transition: 0.3s;
+  bottom: -6px;
+  left: 0;
+}
+
+.navMenu p:hover:after {
+  width: 100%;
+}
+
+
+/* -------------------------------------------- */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+.light:before {
+  position: absolute;
+  content: url(../icons/moon.svg);
+  text-align: center;
+  align-items: center;
+  line-height: 29px;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.dark:before {
+  position: absolute;
+  content: url(../icons/sun.svg);
+  text-align: center;
+  line-height: 30px;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/* --------------------------------------------- */
+
+.hamburger-menu {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.bar-top,
+.bar-middle,
+.bar-bottom {
+  height: 4px;
+  /* background: rgb(45 45 52); */
+  border-radius: 1px;
+  margin: 3px 0;
+  transform-origin: left;
+  transition: all 0.5s;
+}
+
+.bar-top-changed {
+  transform: rotate(45deg);
+  /* background-color: rgb(45 45 52); */
+  height: 4px;
+  border-radius: 1px;
+  margin: 3px 0;
+  transform-origin: left;
+  transition: all 0.5s;
+}
+
+.bar-middle-changed {
+  transform: translateX(1rem);
+  opacity: 0;
+   /* background-color: rgb(45 45 52); */
+  height: 4px;
+  border-radius: 1px;
+  margin: 3px 0;
+  transform-origin: left;
+  transition: all 0.5s;
+}
+
+.bar-bottom-changed {
+  transform: rotate(-45deg);
+  /* background-color: rgb(45 45 52); */
+  height: 4px;
+  border-radius: 1px;
+  margin: 3px 0;
+  transform-origin: left;
+  transition: all 0.5s;
+}
+
+
+/* ----------------------------------------- */
