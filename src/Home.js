@@ -17,7 +17,6 @@ function Home({lightTheme}) {
         <ScrollAnimation animateIn="fadeInUp">  
            <img src={homelogo2} alt='anne lee logo' className={`${!lightTheme && 'invert'} w-96`} />
         </ScrollAnimation>
-
       </div>
 
     </div>
