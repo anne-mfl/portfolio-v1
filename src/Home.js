@@ -2,7 +2,7 @@ import React from 'react'
 import { useNav } from './Navigation/useNav'
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css';
-import homelogo from './images/homelogo.gif'
+// import homelogo from './images/homelogo.gif'
 import homelogo2 from './images/logo03sec.gif'
 
 
