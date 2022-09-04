@@ -38,9 +38,9 @@ function AboutMe({ lightTheme }) {
             <div className='flex pt-5 pb-16'>
               <ul className='pr-20'>
                 <li>JavaScript</li>
+                <li>TypeScript</li>
                 <li>React.js</li>
                 <li>React Native</li>
-                <li>Redux</li>
                 <li>Node.js</li>
               </ul>
               <ul>
@@ -54,7 +54,7 @@ function AboutMe({ lightTheme }) {
           </ScrollAnimation>
 
           <ScrollAnimation animateIn="fadeInUp">
-            <a href='https://drive.google.com/file/d/1hU-hPq_dw34uRW4U4lnqnJCfYJc8whws/view?usp=sharing'
+            <a href='https://drive.google.com/file/d/1VrHpo9gOA_wCe-PbBQ7OkRA7ykXVbjVR/view?usp=sharing'
               className={`bg-beige px-6 py-3 font-montserrat font-normal hover:bg-stone-400 duration-200 ${!lightTheme && 'text-slate-800'}`}>View my resume</a>
           </ScrollAnimation>
         </section>
