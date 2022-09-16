@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNav } from './Navigation/useNav'
 import ScrollAnimation from 'react-animate-on-scroll';
+import bookmark from './images/bookmark.png'
 import comments from './images/comments.png'
 import ecommerce from './images/ecommerce.png'
 import crowdfunding from './images/crowdfunding.png'
@@ -21,6 +22,7 @@ function Projects() {
   const projectsRef = useNav('Projects');
 
   const [display, setDisplay] = useState({
+    bookmark: false,
     comments: false,
     ecommerce: false,
     crowdfunding: false,
@@ -35,6 +37,13 @@ function Projects() {
   })
 
   const projects = [
+    {
+      name: bookmark,
+      title: 'Bookmark Landing Page',
+      using: 'React/TypeScript/TailwindCSS',
+      repo: 'https://github.com/anne-mfl/bookmark-landing-page',
+      site: 'https://anne-mfl.github.io/bookmark-landing-page/'
+    },
     {
       name: comments,
       title: 'Interactive Comments Section',
