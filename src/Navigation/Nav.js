@@ -113,8 +113,6 @@ const Nav = ({ lightTheme, setLightTheme }) => {
 				</ScrollAnimation>
 			</nav>
 
-
-
 			<div className={`${mobileMenuOpen
 				? `block duration-700 md:invisible`
 				: 'block duration-700 -translate-y-full md:invisible'}
