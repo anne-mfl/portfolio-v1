@@ -134,8 +134,16 @@ function Projects() {
       <div className='grid md:grid-cols-3'>
         {projects.map((project, i) => (
           <ScrollAnimation
+            key={i}
             animateIn="fadeInUp"
-            delay={i % 3 === 1 ? 200 : i % 3 === 2 && 400}>
+            delay={
+              i % 3 === 1
+                ? 200
+                : i % 3 === 2
+                  ? 400
+                  : 0
+            }
+          >
             <div
               className='overflow-hidden relative'
               onMouseEnter={() => setDisplay({ [project.name]: true })}

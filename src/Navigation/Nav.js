@@ -78,8 +78,8 @@ const Nav = ({ lightTheme, setLightTheme }) => {
 
 				{/* ------------- mobile menu ------------- */}
 				<ScrollAnimation className='navAnim md:hidden'>
-					<div class='hamburger-menu mr-8' onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-						<div class={
+					<div className='hamburger-menu mr-8' onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+						<div className={
 							mobileMenuOpen && lightTheme
 								? 'bar-top-changed bg-black'
 								: mobileMenuOpen && !lightTheme
@@ -89,7 +89,7 @@ const Nav = ({ lightTheme, setLightTheme }) => {
 										: !mobileMenuOpen && !lightTheme
 										&& 'bar-top bg-white'
 						}></div>
-						<div class={
+						<div className={
 							mobileMenuOpen && lightTheme
 								? 'bar-middle-changed bg-black'
 								: mobileMenuOpen && !lightTheme
@@ -99,7 +99,7 @@ const Nav = ({ lightTheme, setLightTheme }) => {
 										: !mobileMenuOpen && !lightTheme
 										&& 'bar-middle bg-white'
 						}></div>
-						<div class={
+						<div className={
 							mobileMenuOpen && lightTheme
 								? 'bar-bottom-changed bg-black'
 								: mobileMenuOpen && !lightTheme
