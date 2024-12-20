@@ -16,7 +16,7 @@ function App() {
 
   const head = [1, 2, 3, 4]
 
-  console.log(head.reverse())
+  // console.log(head.reverse())
 
 
   const [lightTheme, setLightTheme] = useState(true)
